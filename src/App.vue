@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="container mx-auto mt-5 grid-cols-6 bg-secondary">
+    <NavBar/>
+    <Header/>
+    <Main/>
+    <Categories/>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import NavBar from './components/nav-bar';
+import Header from './components/the-header';
+import Main   from './components/the-main';
+import Categories from './components/the-categories';
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    // eslint-disable-next-line no-mixed-spaces-and-tabs
+  	NavBar,
+    Header,
+    Main,
+    Categories
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
