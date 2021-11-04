@@ -4,6 +4,8 @@
     <Header/>
     <Main/>
     <Categories/>
+    <Tabs/>
+    <TabsMainComponent/>
 </div>
 </template>
 
@@ -12,6 +14,9 @@ import NavBar from './components/nav-bar';
 import Header from './components/the-header';
 import Main   from './components/the-main';
 import Categories from './components/the-categories';
+import Tabs from './components/the-tabs-categories';
+import TabsMainComponent from './components/the-main-text';
+
 export default {
   name: 'App',
   components:{
@@ -19,7 +24,9 @@ export default {
   	NavBar,
     Header,
     Main,
-    Categories
+    Categories,
+    Tabs,
+    TabsMainComponent
   }
 }
 </script>
